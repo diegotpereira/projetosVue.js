@@ -13,10 +13,10 @@
 
 <body>
     <div id="app">
-        <button @clicou="clicou">Clique</button>
+        <button @click="clicou">Clique</button>
         <div :class="{tranquilo: quantidade < 3,
                          alerta: quantidade >= 3,
-                         perigo: quantidade >= 9}">
+                         perigo: quantidade >= 6}">
 
             você clicou {{ quantidade }} vezes
         </div>
