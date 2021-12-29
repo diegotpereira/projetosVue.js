@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo</title>
+
+    <!-- incluir vue  -->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <button @clicou="clicou">Clique</button>
+        <div :class="{tranquilo: quantidade < 3,
+                         alerta: quantidade >= 3,
+                         perigo: quantidade >= 9}">
+
+            você clicou {{ quantidade }} vezes
+        </div>
+        <button @click="limpar" :style="{display: apresentarBotaoLimpar()}">Limpar</button>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
