@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template e Diretivas </title>
+
+    <!-- incluir vue -->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{titulo}}</h1>
+        <div v-show="comprou" :style="{background: cor}">
+            <p>{{conteudo}} </p>
+            <p>{{lado * lado - lado / 100}}</p>
+            <p>{{comprou ? 'Sim ele comprou' : 'Não comprou, compre aqui'}}</p>
+            <input v-model="cor" type="color">
+        </div>
+        <a :href="comprou ? href: ''">{{href}}</a>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
