@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue.js</title>
 
-    <!-- Incluir vue -->
+    <!-- incluir vue -->
     <script src="https://unpkg.com/vue"></script>
 </head>
+
 <body>
 
     <input id="app">
@@ -19,20 +21,16 @@
     <h1>{{valorDuplicado}}</h1>
 
     <h1>v-model</h1>
-    <input v-model="valor"/>
+    <input v-model="valor" />
 
     <h1>v-if</h1>
-    <a v-show="valor > 5"
-       v-bind:href="link"
-       target="_blank">{{mensagem}}</a>
+    <a v-show="valor > 5" v-bind:href="link" target="_blank">{{mensagem}}</a>
     <div v-else>
         voce nao vai ver
     </div>
 
     <h1>v-show</h1>
-    <a v-show="valor > 5"
-       v-bind:href="link"
-       target="_blank">{{mensagem}}</a>
+    <a v-show="valor > 5" v-bind:href="link" target="_blank">{{mensagem}}</a>
 
     <h1>v-for</h1>
     <ul>
@@ -51,13 +49,14 @@
     <button v-on:click="clicou(`botao 1`)">Click 1</button>
     <button @click="clicou(`botao 2`)">Click 2</button>
 
-    <input v-on:keydown="digitou"/>
+    <input v-on:keydown="digitou" />
     <div>
         {{mensagem}}
     </div>
-</div>
+    </div>
 
     <!-- scripts -->
     <script src="js/app.js"></script>
 </body>
+
 </html>
