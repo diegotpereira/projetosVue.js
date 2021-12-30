@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+
+    <!-- incluir vue -->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <button @click="contador++">Clique Aqui</button> {{contador}}
+        <button @click="ativo = !ativo">Toggle</button>
+        <p v-if="ativo">Mostrar texto</p>
+        {{ativo}}
+        <a href="#interno" @click.prevent="handleClick">Link interno</a>
+        <input type="text" @keyup.enter="handleClick">
+        <p @mousemove="handleMove">Esse é o mouse x: {{mouse.x}}</p>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

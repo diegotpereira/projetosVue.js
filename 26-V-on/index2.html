@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+
+    <!-- incluir vue -->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <ul>
+            <li>
+                <a @click.prevent="puxarAcao" href="https://api.origamid.dev/stock/aapl/quote?token=pk_bea744d3560e47cdb6cf2f220123b65c">Apple</a>
+            </li>
+            <li>
+                <a @click.prevent="puxarAcao" href="https://api.origamid.dev/stock/googl/quot?token=pk_bea744d3560e47cdb6cf2f220123b65c">Google</a>
+            </li>
+            <li>
+                <a @click.prevent="puxarAcao" href="https://api.origamid.dev/stock/amzn/quote?token=pk_bea744d3560e47cdb6cf2f220123b65c">Amazon</a>
+            </li>
+            <li>
+                <a @click.prevent="puxarAcao" href="https://api.origamid.dev/stock/ebay/quote?token=pk_bea744d3560e47cdb6cf2f220123b65c">Ebay</a>
+            </li>
+            <li>
+                <a @click.prevent="puxarAcao" href="https://api.origamid.dev/stock/pypl/quote?token=pk_bea744d3560e47cdb6cf2f220123b65c">Paypal</a>
+            </li>
+        </ul>
+        <div>
+            <p>Empresa: {{acao.companyName}}</p>
+            <p>Valor de Mercado: {{acao.marketCap}}</p>
+            <p>Valor da Ação: {{acao.latestPrice}}</p>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="js/index2.js"></script>
+</body>
+
+</html>
