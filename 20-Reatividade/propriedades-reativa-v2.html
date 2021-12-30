@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reatividade</title>
+
+    <!-- incluir vue -->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{ maiorNum }} | {{ maiorNum_2 }}</p>
+
+        <p>{{ resultado }}</p>
+
+        <button v-on:click="maior">Incrementar</button>
+        <button v-on:click="maiorNum_2++">Incrementar 2</button>
+        <button v-on:click="menor">Decrementar</button>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/propriedades-reativa-v2.js"></script>
+</body>
+
+</html>

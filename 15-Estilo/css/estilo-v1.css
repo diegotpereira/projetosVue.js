@@ -1,0 +1,22 @@
+#app {
+    display: flex;
+    justify-content: space-around;
+}
+
+.demo {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+.c1 {
+    background: red;
+}
+
+.c2 {
+    background: green;
+}
+
+.c3 {
+    background: blue;
+}

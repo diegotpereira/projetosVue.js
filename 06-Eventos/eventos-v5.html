@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <!-- incluir vue -->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{contador}}</p>
+
+        <button v-on:click="soma(2, $event)">Somar 1</button>
+        <p v-on:mousemove="atualizarXY">Mouse: {{ x }} e {{ y }}
+            <span v-on:mousemove.stop="">Parar evento de mouse!</span>
+        </p>
+        <a v-on:click.prevent="" href="https://www.google.com">Google</a>
+        <hr>
+        <input type="text" name="" id="" v-on:keyup.enter="alerta">
+    </div>
+
+    <script src="js/eventos-v5.js"></script>
+</body>
+
+</html>

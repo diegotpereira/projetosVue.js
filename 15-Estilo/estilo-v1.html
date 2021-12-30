@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo 2</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="css/estilo-v1.css">
+    <!-- incluir vue  -->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="demo" :class="{c1:aplicarC1}" @mouseover="aplicarC1 = !aplicarC1"></div>
+        <div class="demo" :class="{c2:aplicarC2}" @mouseover="aplicarC2 = !aplicarC2"></div>
+        <div class="demo" v-bind:class="{c3:aplicarC3}" v-on:mouseover="aplicarC3 = !aplicarC3"></div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/estilo-v1.js"></script>
+</body>
+
+</html>
