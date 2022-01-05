@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <style type="text/css"></style>
+
+    <!-- vue biblioteca -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <h1>v-if e v-show</h1>
+            <h2 v-if="status">{{titulo}}</h2>
+            <p v-if="texto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem quaerat nesciunt dolorem natus quod. Voluptatem delectus porro, veniam, suscipit nisi adipisci aliquam nesciunt mollitia alias nemo, eligendi assumenda deleniti?
+            </p>
+            <p v-else>Não tem texto</p>
+            <hr>
+            <div v-if="usuario.id == 1">
+                <span>Id: {{usuario.id}}</span><br>
+                <span>Nome: {{usuario.nome}}</span><br>
+                <span>Profissão: {{usuario.profissao}}</span>
+            </div>
+            <div v-else>
+                <h4>Não tem usuário om id 1</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
