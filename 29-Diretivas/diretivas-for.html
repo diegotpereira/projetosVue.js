@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretivas-for</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <style type="text/css"></style>
+
+    <!-- vue biblioteca -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <h2>{{titulo}}</h2>
+            <ul>
+                <li v-for="item in linguagens">{{item.nome}}</li>
+            </ul>
+            <h2>Com index</h2>
+            <ul>
+                <li v-for="(item, index) in linguagens">{{index}} - {{item.nome}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/diretivas-for.js"></script>
+</body>
+
+</html>

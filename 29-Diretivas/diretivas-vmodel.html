@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretivas-vmodel</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <style type="text/css"></style>
+
+    <!-- vue biblioteca -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>{{titulo}}</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Endereço de e-mail</label>
+                            <input type="email" v-model="email" class="form-control" name="" id="exampleFormControlInput1" placeholder="nome@example.com.br">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Seleção de exemplo</label>
+                            <select class="form-control" v-model="select" name="" id="exampleFormControlSelect1">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Exemplo de seleção múltipla</label>
+                            <select multiple class="form-control" v-model="opcoes" id="exampleFormControlSelect2">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Exemplo textarea</label>
+                            <textarea v-model="descricao" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="nome" v-model="nome" /> Valor do input: {{nome}}
+                    <hr> email: {{email}}<br> opções: {{opcoes}}<br> seleção: {{select}}<br> descrição: {{descricao}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/diretivas-vmodel.js"></script>
+</body>
+
+</html>
